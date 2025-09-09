@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: awesome-aarohi-d01e2a4edb-srv
+spec:
+  selector:
+    app: awesome-aarohi-d01e2a4edb
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 7070
+  type: ClusterIP
